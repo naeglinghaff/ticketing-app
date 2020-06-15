@@ -1,8 +1,17 @@
 ## Ticketing App
 
-An application to manage customer service tickets and tasks among a team.
+An API to manage customer service tickets and tasks within a team.
 
-### Design
+### Design decisions
+
+This repo represents the backend API for the application. A react app will serve the client in the browser.
+
+This API will rely on the inbuilt cache management of Rails to handle updating the data.
+
+| Model  | Characteristics                                          | Behaviour                              |
+|--------|----------------------------------------------------------|----------------------------------------|
+| User   | Name, email, password (authentication), admin?           | CRUD                                   |
+| Ticket | Title, description, priority, assigned_users, completed? | CRUD, can be archived, can be assigned |
 
 The initial design of the app is based around OOP principles. There will be users, tickets and potentially admins, a class of users which have more permissions on the application to assign tickets.
 
