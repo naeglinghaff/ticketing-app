@@ -1,5 +1,5 @@
-require 'test_helper'
+require 'spec_helper'
 
-RSpec.describe Ticket, :type => :model do
+RSpec.describe Ticket, type: :model do
 
 end

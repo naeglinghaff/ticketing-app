@@ -1,6 +1,6 @@
-require 'test_helper'
+require 'spec_helper'
 
-RSpec.describe User, :type => :model do
+RSpec.describe User, type: :model do
   it "is valid with an email address and password" do
     expect(User.new(email: "countcatula@email.com", password: "12345678")).to be_valid
   end
