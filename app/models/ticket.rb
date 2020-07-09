@@ -1,2 +1,2 @@
-class Todo < ApplicationRecord
+class Ticket < ApplicationRecord
 end
