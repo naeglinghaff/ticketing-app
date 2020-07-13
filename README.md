@@ -10,10 +10,10 @@ This API will rely on the inbuilt cache management of Rails to handle updating t
 
 | Model  | Characteristics                                          | Behaviour                              |
 |--------|----------------------------------------------------------|----------------------------------------|
-| User   | Name, email, password (authentication), admin?           | CRUD                                   |
-| Ticket | Title, description, priority, assigned_users, completed?, has an owner | CRUD, can be archived, can be assigned |
+| User   | Name, email, password (authentication), is_admin        | Create Read Update | Delete (only for admins), can_assign?, can_delete?, has_manager?                                 |
+| Ticket | Title, description, priority, completed?, creator_id, owner_id  | Create Read Update | Delete (only for admins), can be archived, can be assigned, can be unassigned |
 
-The initial design of the app is based around OOP principles. There will be users, tickets and potentially admins, a class of users which have more permissions on the application to assign tickets.
+The initial design of the app is based around OOP principles. There will be users, tickets and potentially teams. Some users have additional abilities if they pass the are_admin? check such as assigning tickets, viewing tickets within their team and deleting/archiving tickets.
 
 Tickets can be organised in terms of their urgency, the type of problem and by their assignee. A user will be able to view all of the ticket assigned to them or they will be able to see a list of their submitted tickets.
 
