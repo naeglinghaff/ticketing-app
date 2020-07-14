@@ -50,6 +50,8 @@ group :test do
   gem 'rspec-rails'
   # Easy installation and use of web drivers to run system tests with browsers
   gem 'webdrivers'
+  gem 'shoulda-matchers'
+  gem 'database_cleaner-active_record'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
