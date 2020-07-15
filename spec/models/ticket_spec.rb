@@ -12,4 +12,11 @@ RSpec.describe Ticket, type: :model do
     it { should validate_presence_of(:user) }
   end
 
+  describe 'defaults' do
+    it 'should default complete field to false' do
+      ticket = Ticket.new(title: "title", description: "description", user_id: 1)
+      expect(ticket.completed).to eq(false)
+    end
+  end
+
 end
