@@ -17,6 +17,11 @@ RSpec.describe Ticket, type: :model do
       ticket = Ticket.new(title: "title", description: "description", user_id: 1)
       expect(ticket.completed).to eq(false)
     end
+
+    it 'should default priority field to 0' do
+      ticket2 = Ticket.new(title: "title", description: "description", user_id: 1)
+      expect(ticket2.priority).to eq(0)
+    end
   end
 
 end
