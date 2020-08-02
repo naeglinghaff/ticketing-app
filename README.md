@@ -1,6 +1,6 @@
 ## Ticketing App
 
-An API to manage customer service tickets and tasks within a team. Build with Rails.
+An API to manage customer service tickets and tasks within a team. Built with Rails.
 
 ### Design decisions
 
