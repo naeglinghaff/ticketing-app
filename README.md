@@ -4,7 +4,7 @@ An API to manage customer service tickets and tasks within a team. Built with Ra
 
 ### Design decisions
 
-This repo represents the backend API for the application.
+This repository represents the backend API for the application.
 
 This API will rely on the inbuilt cache management of Rails to handle updating the data.
 
